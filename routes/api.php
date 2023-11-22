@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GalleryController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/gallery', [GalleryController::class, 'gallery'])->name('galleryApi');
+Route::post('/gallery-store', [GalleryController::class, 'addGallery'])->name('galleryApi.store');

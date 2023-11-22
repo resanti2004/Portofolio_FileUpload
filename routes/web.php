@@ -34,18 +34,18 @@ Route::controller(LoginRegisterController::class)->group(function() {
 
 Route::resource('gallery', GalleryController::class);
 
-Route::get('/users', [ImageController::class, 'showUsers'])->name('users');
-Route::get('/users/{id}/edit', [ImageController::class, 'edit'])->name('edit');
-Route::put('/users/{id}', [ImageController::class, 'update'])->name('users.update');
-Route::delete('/users/{id}', [ImageController::class, 'destroy'])->name('users.delete');
-Route::get('/users/{user}/resize', [ImageController::class, 'resizeForm'])->name('users.resize');
-Route::post('/users/{user}/resize', [ImageController::class, 'resizeImage'])->name('resizeImage');
+// Route::get('/users', [ImageController::class, 'showUsers'])->name('users');
+// Route::get('/users/{id}/edit', [ImageController::class, 'edit'])->name('edit');
+// Route::put('/users/{id}', [ImageController::class, 'update'])->name('users.update');
+// Route::delete('/users/{id}', [ImageController::class, 'destroy'])->name('users.delete');
+// Route::get('/users/{user}/resize', [ImageController::class, 'resizeForm'])->name('users.resize');
+// Route::post('/users/{user}/resize', [ImageController::class, 'resizeImage'])->name('resizeImage');
 
 
 
 
-Route::get('/create-file', [FileController::class, 'createFile']);
-Route::get('/get-file', [FileController::class, 'getFile']);
-Route::get('/download-file', [FileController::class, 'downloadFile']);
-Route::get('/copy-file', [FileController::class, 'copyFile']);
-Route::get('/move-file', [FileController::class, 'moveFile']);
+// Route::get('/create-file', [FileController::class, 'createFile']);
+// Route::get('/get-file', [FileController::class, 'getFile']);
+// Route::get('/download-file', [FileController::class, 'downloadFile']);
+// Route::get('/copy-file', [FileController::class, 'copyFile']);
+// Route::get('/move-file', [FileController::class, 'moveFile']);
